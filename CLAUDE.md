@@ -31,7 +31,7 @@ Write in ASD-STE100 Simplified Technical English. The reader may not be a data e
 ## Charts
 - One insight per chart. The title states the finding. Gray out the rest. No clutter.
 
-## Deliverables for every analysis (in `runs/<project>/`)
+## Deliverables for every analysis (always in `runs/telco/`, never another folder)
 - `recommendation.md`: 1 page for the decision maker. Start with the recommendation, then what we found, how sure we are, the value range, data issues, risks, and the next step.
 - Charts as PNG files.
 - `cleaning_log.md`
