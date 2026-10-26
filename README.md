@@ -1,7 +1,7 @@
 # Agentic Analyst Kit
 
 Business analysis with an AI agent: a brief, a reviewer agent, and checks you can trust.
-Built in the AI Fluency Sprint (BAX 461, UC Davis).
+Built in the AI Fluency Sprint (BAX 462, UC Davis).
 
 ## The case: the $2M decision
 The VP of Marketing wants to spend $2M to move month-to-month customers to 1-year contracts.
