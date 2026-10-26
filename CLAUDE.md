@@ -2,6 +2,16 @@
 
 These rules apply to every analysis in this repo. The question for each task is in a brief in `briefs/`.
 
+## How to write (every reply and every file)
+Write in ASD-STE100 Simplified Technical English. The reader may not be a data expert or a native English speaker.
+- Be brief. Give the answer first. Do not repeat what the user said.
+- One idea per sentence. Maximum 20 words per sentence.
+- Maximum 4 sentences per paragraph. Use tables and short lists, not long text.
+- Use active voice and common words. Use one word for one meaning.
+- Write instructions as commands: "Remove the duplicates", not "The duplicates should be removed".
+- Explain a technical term in plain words the first time you use it.
+- When you ask the user a question, ask one question. Give 2 or 3 choices and say which one you recommend.
+
 ## Data
 - Raw data is in `data/raw/`. Never change it. Write cleaned data to `runs/`.
 - Before any analysis, profile the data: row count, unique IDs, column types, min and max of number columns, blanks per column.
