@@ -26,6 +26,8 @@ Write in ASD-STE100 Simplified Technical English. The reader may not be a data e
 - Say "associated with", never "causes", unless the data comes from an experiment.
 - Show the plan before you run code.
 - Every number in a deliverable must come from code that can be run again.
+- Never invent a number, fact, or source. If the data cannot answer, write "unknown" and say what data is needed.
+- Label each number: **data** (counted directly from the file), **derived** (calculated from data numbers; show the formula), or **assumption** (not in the data; say who set it and why).
 - Opportunity sizes: show low, mid, and high, with every assumption stated.
 
 ## Charts
