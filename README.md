@@ -20,15 +20,19 @@ Should we fund it?
 ## Steps (prompts only, no code)
 Copy-paste prompts for every step: **[PROMPTS.md](PROMPTS.md)**. Use **claude.ai/code**, not the normal Claude chat.
 
-0. **Know the data:** ask the agent to profile the data. Write down 3 things that look wrong.
-1. **Brief:** ask the agent to interview you and write `briefs/2m-campaign.md`.
-2. **Reviewer:** ask the agent to create a reviewer agent.
-3. **Run:** in plan mode, read the plan, change 1 step, approve.
-4. **Verify:** ask for evidence for each claim. Compare it with your 3 notes.
-5. **Deliver:** fix what the review found, then commit and push.
+0. **Know the data:** guess the churn rate, profile the data, write 3 things that look wrong, and add 1 rule to `CLAUDE.md`.
+1. **Brief:** let the agent interview you and write `briefs/2m-campaign.md`.
+2. **Reviewer:** create a reviewer agent. Compare its checks with 2 of your own.
+3. **Run:** in Plan mode, read the plan, change 1 step, approve.
+4. **Verify and decide:** ask for evidence. Compare it with your notes. Write your own recommendation.
+5. **Deliver:** fix what the review found, push, then merge to `main`.
 
 ## Results
-<!-- My recommendation in 1 line. 1 issue I caught that the agent first missed. -->
+- **My recommendation:**
+- **Full report with charts:** [runs/telco/recommendation.md](runs/telco/recommendation.md)
+- **The brief I wrote:** [briefs/2m-campaign.md](briefs/2m-campaign.md)
+- **My team rule:** see "Analysis rules" in [CLAUDE.md](CLAUDE.md)
+- **The reviewer agent:** [.claude/agents/reviewer.md](.claude/agents/reviewer.md) and its review: [runs/telco/review.md](runs/telco/review.md)
 
 ## Data
 Telco Customer Churn: IBM sample data (a fictional company), modified for teaching.
