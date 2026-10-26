@@ -18,6 +18,8 @@ Should we fund it?
 | `runs/` | Outputs: recommendation, charts, logs |
 
 ## Steps (prompts only, no code)
+Copy-paste prompts for every step: **[PROMPTS.md](PROMPTS.md)**. Use **claude.ai/code**, not the normal Claude chat.
+
 0. **Know the data:** ask the agent to profile the data. Write down 3 things that look wrong.
 1. **Brief:** ask the agent to interview you and write `briefs/2m-campaign.md`.
 2. **Reviewer:** ask the agent to create a reviewer agent.
