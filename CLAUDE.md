@@ -34,8 +34,11 @@ Write in ASD-STE100 Simplified Technical English. The reader may not be a data e
 - One insight per chart. The title states the finding. Gray out the rest. No clutter.
 
 ## Deliverables for every analysis (always in `runs/telco/`, never another folder)
-- `recommendation.md`: 1 page for the decision maker. Start with the recommendation, then what we found, how sure we are, the value range, data issues, risks, and the next step.
-- Charts as PNG files.
+- `recommendation.md`: a complete report. A reader must understand it without opening any other file. It has 3 parts:
+  1. **Summary** (1 page maximum): the recommendation, what we found, how sure we are, the value range, data issues, risks, and the next step.
+  2. **Charts**: show every chart in the report with `![chart title](chart_file.png)`. Under each chart, write one sentence that says what it shows.
+  3. **Appendix**: the data source and size; a data dictionary (column, meaning, type); a cleaning summary (rows before and after, each fix); the key result tables; every assumption with its low, mid, and high values; and the command to run the analysis again.
+- Charts as PNG files, in the same folder as `recommendation.md`.
 - `cleaning_log.md`
 - `findings.json` in exactly this format:
 
