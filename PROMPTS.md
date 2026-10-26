@@ -9,11 +9,11 @@ List the files in data/raw.
 Expected: `telco_v2.csv`.
 
 ## Step 0. Know the data
-First, guess: what % of customers left? Write it down. Then:
+Start with exploratory data analysis. Read only: change nothing.
 ```
 Profile data/raw/telco_v2.csv. Show me: row count, unique customer IDs, each column's type, min and max of every number column, blanks per column, and churn rate by every column. Do not clean or change anything.
 ```
-Write down 3 things that look wrong. Keep them for Step 4.
+Review the output: counts, value ranges, blanks, and churn by group. Record 3 data issues. You will check them against the agent's work in Step 4.
 
 ### Add one rule to CLAUDE.md
 Use this pattern: **When [situation], always [action], and [show or log what].**
@@ -49,7 +49,7 @@ While it runs, open `briefs/2m-campaign.md`. Which "stop and ask" rule do you ex
 
 ## Step 4. Verify and decide
 The evidence prompt is on the slide. After it:
-- Compare the evidence with your 3 notes from Step 0.
+- Compare the evidence with the 3 data issues you recorded in Step 0.
 - Write **your own** recommendation in 2 lines. You can disagree with the agent.
 
 ## Step 5. Deliver

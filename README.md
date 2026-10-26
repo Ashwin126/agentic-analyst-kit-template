@@ -20,11 +20,11 @@ Should we fund it?
 ## Steps (prompts only, no code)
 Copy-paste prompts for every step: **[PROMPTS.md](PROMPTS.md)**. Use **claude.ai/code**, not the normal Claude chat.
 
-0. **Know the data:** guess the churn rate, profile the data, write 3 things that look wrong, and add 1 rule to `CLAUDE.md`.
+0. **Know the data:** profile the data, record 3 data issues, and add 1 rule to `CLAUDE.md`.
 1. **Brief:** let the agent interview you and write `briefs/2m-campaign.md`.
 2. **Reviewer:** create a reviewer agent. Compare its checks with 2 of your own.
 3. **Run:** in Plan mode, read the plan, change 1 step, approve.
-4. **Verify and decide:** ask for evidence. Compare it with your notes. Write your own recommendation.
+4. **Verify and decide:** ask for evidence. Compare it with your 3 data issues. Write your own recommendation.
 5. **Deliver:** fix what the review found, push, then merge to `main`.
 
 ## Results
