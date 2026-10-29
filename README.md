@@ -35,4 +35,6 @@ Copy-paste prompts for every step: **[PROMPTS.md](PROMPTS.md)**. Use **claude.ai
 - **The reviewer agent:** [.claude/agents/reviewer.md](.claude/agents/reviewer.md) and its review: [runs/telco/review.md](runs/telco/review.md)
 
 ## Data
-Telco Customer Churn: IBM sample data (a fictional company), modified for teaching.
+**Source:** IBM Telco Customer Churn sample dataset (IBM Sample Data Sets), a fictional phone and internet company with 7,043 customers. Public copy: [kaggle.com/datasets/blastchar/telco-customer-churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn).
+
+`data/raw/telco_v2.csv` is a modified version made for teaching. Some rows and columns were changed or added, so results differ from the original dataset.
