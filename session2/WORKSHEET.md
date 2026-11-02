@@ -70,14 +70,21 @@ For every agent, including the reviewer:
 | | | |
 
 ### 3. One-page defense
-Answer each in 1 or 2 lines:
+Answer each in 1 to 3 lines, in this order:
 
-1. **Roles:** what does each agent do, and why is it a separate agent?
-2. **Checks:** what is checked at your 3 most important hand-offs, and how?
-3. **Human stop:** where must a person decide, and why there?
-4. **Reviewer:** what does your reviewer check that the other agents cannot check themselves?
-5. **Cut:** one agent you chose **not** to add, and why.
-6. **Trade-offs:** 2 advantages and 2 risks of your design.
+1. **The problem we chose:** the card number and question.
+2. **The problem in plain English:** who is asking, what they must decide, and what “done” looks like for them.
+3. **What we plan to do:** the approach in a few steps, before any agents.
+4. **Our agent architecture:** your diagram, plus:
+   - **Checks:** what is checked at your 3 most important hand-offs, and how.
+   - **Human stops:** where a person must decide, and why there.
+   - **Reviewer:** what it checks that the other steps cannot check themselves.
+5. **Why this design:** why these steps, and why each is an agent or a workflow step.
+6. **Pros:** 2 strengths of your design.
+7. **Risks:** 2 ways your design could fail, or give a wrong answer.
+8. **The alternative:** one other design you considered, and why you did not choose it.
+
+**Use what you learned in Session 1.** Your design should still have what made the $2M analysis trustworthy: a clear brief, stop-and-ask rules, a reviewer that did not do the work, and evidence for every number.
 
 ## What makes a good design
 
