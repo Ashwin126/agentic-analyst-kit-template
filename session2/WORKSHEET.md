@@ -25,10 +25,10 @@ Describe your design to any AI chat and paste this:
 
 ```
 Turn this agent design into a Mermaid flowchart (flowchart TD).
-Use three step types and label each box with its type:
-- AGENT (AI makes a judgment): dark navy box, white text.
-- WORKFLOW (a fixed rule, script or tool call, no AI judgment): light blue box.
-- HUMAN (a person decides): gold diamond.
+Use three step types. Name each box with its type first, using underscores:
+- agent_<name> (AI makes a judgment), e.g. agent_reviewer: dark navy box, white text.
+- workflow_<name> (a fixed rule, script or tool call), e.g. workflow_join_tables: light blue box.
+- human_<name> (a person decides), e.g. human_refund_approval: gold diamond.
 Put the file each step hands over on the arrow.
 Show steps that only happen sometimes as dotted arrows.
 Use these classDef lines:
@@ -46,12 +46,12 @@ View it at [mermaid.live](https://mermaid.live). Take a screenshot for your slid
 
 ```mermaid
 flowchart TD
-    V(["Voice note: 2 kilo potato"]) --> L["AGENT · Listener: understands the request"]
-    L -- "order.json" --> H1{"HUMAN · Read back: 2 kg potatoes? She confirms"}
-    H1 --> S["AGENT · Shopper: picks items, fills cart"]
-    S -- "cart.json" --> C["AGENT · Checker (reviewer): cart matches order? under limit?"]
-    C -- "OK" --> O["WORKFLOW · Place order: tool call, voice update"]
-    C -. "over limit or substitute" .-> H2{"HUMAN · Her son approves"}
+    V(["Voice note: 2 kilo potato"]) --> L["agent_listener: understands the request"]
+    L -- "order.json" --> H1{"human_confirm_order: read back 2 kg potatoes? She confirms"}
+    H1 --> S["agent_shopper: picks items, fills cart"]
+    S -- "cart.json" --> C["agent_checker (reviewer): cart matches order? under limit?"]
+    C -- "OK" --> O["workflow_place_order: tool call, voice update"]
+    C -. "over limit or substitute" .-> H2{"human_son_approval: her son approves"}
     H2 --> O
     classDef agent fill:#0B2545,stroke:#0B2545,color:#F6F3EC
     classDef workflow fill:#DCE8F7,stroke:#2F6FDB,color:#14213D
