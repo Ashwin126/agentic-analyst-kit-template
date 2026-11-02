@@ -5,7 +5,7 @@ Read the [data card](DATA_CARD.md) first.
 
 ## The rules
 
-- **3 to 5 agents**, plus **1 reviewer agent** (required). The reviewer did not do the work and checks it.
+- **3 to 5 steps**: agents (need judgment) or workflow steps (always do the same thing). Plus **1 reviewer agent** (required). The reviewer did not do the work and checks it.
 - Every arrow between agents passes a **named file** (for example `orders_joined.csv`).
 - Put a **check** on your **3 most important hand-offs**.
 - Add at least **one human stop**: a point where a person must decide before the team goes on.
