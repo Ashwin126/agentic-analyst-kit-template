@@ -9,7 +9,7 @@ You do not need to download it today. Read this card and design an agent team th
 
 | Source | File | Rows | Key columns | Watch out |
 | --- | --- | ---: | --- | --- |
-| **Orders** | `olist_orders_dataset.csv` | 99,441 | `order_id`, `customer_id`, `order_status`, 5 timestamps (purchase → delivered), estimated delivery date | 2,965 orders have no delivery date (canceled, shipped, not yet delivered) |
+| **Orders** | `olist_orders_dataset.csv` | 99,441 | `order_id`, `customer_id`, `order_status`, and 5 dates: bought, payment approved, handed to the carrier, received by the customer, and the promised (estimated) delivery date | 2,965 orders have no delivery date (canceled, shipped, not yet delivered) |
 | **Payments** | `olist_order_payments_dataset.csv` | 103,886 | `order_id`, `payment_type`, `payment_installments`, `payment_value` | One order can have up to 29 payment rows. Add them up per order |
 | **Reviews** | `olist_order_reviews_dataset.csv` | 99,224 | `order_id`, `review_score` (1–5), `review_comment_message` | Comments are in **Portuguese**. Only 41% of reviews have text. 547 orders have 2+ reviews |
 | **Customers** | `olist_customers_dataset.csv` | 99,441 | `customer_id`, `customer_unique_id`, city, state | `customer_id` is new for **every order**. The person is `customer_unique_id` (96,096 people). Only 3.1% bought twice |
