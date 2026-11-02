@@ -34,6 +34,9 @@ Copy-paste prompts for every step: **[PROMPTS.md](PROMPTS.md)**. Use **claude.ai
 - **My team rule:** see "Analysis rules" in [CLAUDE.md](CLAUDE.md)
 - **The reviewer agent:** [.claude/agents/reviewer.md](.claude/agents/reviewer.md) and its review: [runs/telco/review.md](runs/telco/review.md)
 
+## Session 2: design an agent team
+Read the [data card](session2/DATA_CARD.md), then use the [team worksheet](session2/WORKSHEET.md).
+
 ## Data
 **Source:** IBM Telco Customer Churn sample dataset (IBM Sample Data Sets), a fictional phone and internet company with 7,043 customers. Public copy: [kaggle.com/datasets/blastchar/telco-customer-churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn).
 
