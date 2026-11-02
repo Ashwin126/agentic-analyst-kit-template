@@ -25,24 +25,40 @@ Describe your design to any AI chat and paste this:
 
 ```
 Turn this agent design into a Mermaid flowchart (flowchart TD).
-Agents are boxes. Put the file each agent hands over on the arrow.
-Show checks as dotted arrows. Show human stops as diamonds.
-Design: <describe your agents, files, checks and human stops>
+Use three step types and label each box with its type:
+- AGENT (AI makes a judgment): dark navy box, white text.
+- WORKFLOW (a fixed rule, script or tool call, no AI judgment): light blue box.
+- HUMAN (a person decides): gold diamond.
+Put the file each step hands over on the arrow.
+Show steps that only happen sometimes as dotted arrows.
+Use these classDef lines:
+classDef agent fill:#0B2545,stroke:#0B2545,color:#F6F3EC
+classDef workflow fill:#DCE8F7,stroke:#2F6FDB,color:#14213D
+classDef human fill:#FCE9B8,stroke:#8A5A00,color:#14213D
+Design: <describe your steps, files, checks and human stops>
 ```
 
 View it at [mermaid.live](https://mermaid.live). Take a screenshot for your slide.
+
+**Agent or workflow?** If the step needs judgment (reading text, choosing, writing, checking), it is an agent. If it always does the same thing (joining tables, computing a fixed metric, sending a file), it is a workflow step.
 
 **Example:** a voice shopping assistant (not an Olist card), drawn this way. Paste it into mermaid.live to see it.
 
 ```mermaid
 flowchart TD
-    V(["Voice note: 2 kilo potato"]) --> L["Listener agent: speech to text"]
-    L -- "order.json" --> H1{"Read back: 2 kg potatoes? She confirms"}
-    H1 --> S["Shopper agent: search, fill cart"]
-    S -- "cart.json" --> C["Checker: cart matches order.json, under the limit"]
-    C -. "over the limit or a substitute" .-> H2{"Her son approves"}
-    C --> O["Order agent: place order, voice update"]
+    V(["Voice note: 2 kilo potato"]) --> L["AGENT · Listener: understands the request"]
+    L -- "order.json" --> H1{"HUMAN · Read back: 2 kg potatoes? She confirms"}
+    H1 --> S["AGENT · Shopper: picks items, fills cart"]
+    S -- "cart.json" --> C["AGENT · Checker (reviewer): cart matches order? under limit?"]
+    C -- "OK" --> O["WORKFLOW · Place order: tool call, voice update"]
+    C -. "over limit or substitute" .-> H2{"HUMAN · Her son approves"}
     H2 --> O
+    classDef agent fill:#0B2545,stroke:#0B2545,color:#F6F3EC
+    classDef workflow fill:#DCE8F7,stroke:#2F6FDB,color:#14213D
+    classDef human fill:#FCE9B8,stroke:#8A5A00,color:#14213D
+    class L,S,C agent
+    class O workflow
+    class H1,H2 human
 ```
 
 ### 2. Agent prompts (2 lines each)
