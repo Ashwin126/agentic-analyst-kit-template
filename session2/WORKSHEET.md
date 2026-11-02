@@ -72,7 +72,7 @@ For every agent, including the reviewer:
 ### 3. One-page defense
 Answer each in 1 to 3 lines, in this order:
 
-1. **The problem we chose:** the card number and question.
+1. **The problem we chose, and why:** the card number and question, and why your team picked it over the others.
 2. **The problem in plain English:** who is asking, what they must decide, and what “done” looks like for them.
 3. **What we plan to do:** the approach in a few steps, before any agents.
 4. **Our agent architecture:** your diagram, plus:
