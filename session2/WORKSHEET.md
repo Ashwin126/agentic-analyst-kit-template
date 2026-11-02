@@ -32,6 +32,19 @@ Design: <describe your agents, files, checks and human stops>
 
 View it at [mermaid.live](https://mermaid.live). Take a screenshot for your slide.
 
+**Example:** a voice shopping assistant (not an Olist card), drawn this way. Paste it into mermaid.live to see it.
+
+```mermaid
+flowchart TD
+    V(["Voice note: 2 kilo potato"]) --> L["Listener agent: speech to text"]
+    L -- "order.json" --> H1{"Read back: 2 kg potatoes? She confirms"}
+    H1 --> S["Shopper agent: search, fill cart"]
+    S -- "cart.json" --> C["Checker: cart matches order.json, under the limit"]
+    C -. "over the limit or a substitute" .-> H2{"Her son approves"}
+    C --> O["Order agent: place order, voice update"]
+    H2 --> O
+```
+
 ### 2. Agent prompts (2 lines each)
 For every agent, including the reviewer:
 
